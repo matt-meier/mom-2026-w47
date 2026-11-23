@@ -1,0 +1,565 @@
+/* ==========================================================================
+   Editorial Infographic: Asymmetric Staircase of Probability Phrases
+   Desktop canvas locked to 1201 x 741 px for Tableau Public Web Page embeds
+   ========================================================================== */
+
+:root {
+  --bg-page: #EFECE6;
+  --bg-canvas: #FAF8F5;
+  --ink-dark: #1F2429;
+  --ink-mid: #4A5058;
+  --ink-muted: #777D84;
+  --rule-hairline: #DDD6CA;
+  --grid-line: #E5DFD5;
+  --stair-fill: #ECE6DC;
+  --tread-ink: #2B333C;
+
+  /* Sunrise-Sunset 3-Tier Accessible Palette */
+  --col-toss: #D95F38;
+  --col-moderate: #D49B4B;
+  --col-clear: #112E51;
+
+  --footer-bg: rgba(17, 46, 81, 0.90);
+  --footer-ink: #FFFFFF;
+
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-canvas);
+  color: var(--ink-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-shell {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--bg-canvas);
+}
+
+/* Exact 1201 x 741 px Tableau Public Desktop Frame */
+.infographic-canvas {
+  position: relative;
+  width: 1201px;
+  height: 741px;
+  background-color: var(--bg-canvas);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+/* ==========================================================================
+   Header, Lead Context, and Formal Accessible Color Legend
+   ========================================================================== */
+.editorial-header {
+  padding: 20px 44px 0 52px;
+}
+
+.headline {
+  margin: 0 0 5px 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.08;
+  letter-spacing: 0.4px;
+  color: var(--ink-dark);
+  text-transform: uppercase;
+}
+
+.lead-copy {
+  margin: 0 0 11px 0;
+  max-width: 720px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12.6px;
+  line-height: 1.44;
+  color: var(--ink-mid);
+}
+
+.legend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.legend-block {
+  border-bottom: 1px solid var(--rule-hairline);
+  padding-bottom: 8px;
+}
+
+.legend-title-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.legend-heading {
+  font-size: 10.2px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--ink-dark);
+  text-transform: uppercase;
+}
+
+.legend-sub {
+  font-size: 10.2px;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.legend-pills {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.legend-pill {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 3px 8px 3px 4px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  transition: background-color 140ms ease, border-color 140ms ease, opacity 140ms ease;
+}
+
+.legend-pill:hover,
+.legend-pill:focus-visible {
+  background-color: rgba(17, 46, 81, 0.05);
+  border-color: rgba(17, 46, 81, 0.16);
+  outline: none;
+}
+
+.legend-pill[aria-pressed="true"] {
+  background-color: rgba(17, 46, 81, 0.09);
+  border-color: rgba(17, 46, 81, 0.35);
+}
+
+.legend-pills.has-active .legend-pill[aria-pressed="false"] {
+  opacity: 0.45;
+}
+
+.swatch {
+  width: 16px;
+  height: 11px;
+  border-radius: 2.5px;
+  margin-top: 3px;
+  flex: 0 0 16px;
+}
+
+.swatch-toss {
+  background-color: var(--col-toss);
+}
+
+.swatch-moderate {
+  background-color: var(--col-moderate);
+}
+
+.swatch-clear {
+  background-color: var(--col-clear);
+}
+
+.pill-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.pill-copy strong {
+  font-size: 10.8px;
+  font-weight: 700;
+  color: var(--ink-dark);
+}
+
+.pill-copy small {
+  font-size: 9.8px;
+  font-weight: 400;
+  color: var(--ink-muted);
+  margin-top: 1px;
+}
+
+.interaction-cue {
+  margin: 0 0 9px 0;
+  font-size: 10.2px;
+  font-weight: 400;
+  color: var(--ink-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Main SVG Chart Stage & Interactive States
+   ========================================================================== */
+.chart-stage {
+  position: relative;
+  width: 1201px;
+  height: 488px;
+  margin-top: 2px;
+}
+
+.svg-scroll-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+#staircase-svg {
+  display: block;
+  width: 1201px;
+  height: 488px;
+  font-family: var(--font-body);
+  overflow: visible;
+}
+
+.riser-group,
+.tread-group {
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.riser-group:focus,
+.tread-group:focus {
+  outline: none;
+}
+
+.is-dimmed {
+  opacity: 0.18;
+}
+
+.riser-group.is-hovered .riser-bar {
+  stroke-width: 7.5;
+}
+
+.riser-group.is-hovered .riser-dot {
+  r: 6.2;
+}
+
+.tread-group.is-hovered .tread-line {
+  stroke: var(--col-clear);
+  stroke-width: 4;
+}
+
+.tread-group.is-hovered .phrase-label {
+  fill: var(--col-clear);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Editorial Narrative Tooltip (Plain-Language, Zero Command Buttons)
+   ========================================================================== */
+.editorial-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 304px;
+  padding: 12px 14px;
+  background-color: rgba(255, 255, 255, 0.97);
+  border: 1px solid #D9D2C5;
+  border-left: 4px solid var(--col-clear);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(17, 46, 81, 0.12);
+  color: var(--ink-dark);
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(0, 4px, 0);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.editorial-tooltip.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.editorial-tooltip[data-tier="toss"] {
+  border-left-color: var(--col-toss);
+}
+
+.editorial-tooltip[data-tier="moderate"] {
+  border-left-color: var(--col-moderate);
+}
+
+.editorial-tooltip[data-tier="clear"],
+.editorial-tooltip[data-tier="phrase"] {
+  border-left-color: var(--col-clear);
+}
+
+.tt-kicker {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 0 0 3px 0;
+}
+
+.tt-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink-dark);
+  margin: 0 0 6px 0;
+}
+
+.tt-body {
+  font-size: 11.2px;
+  font-weight: 400;
+  line-height: 1.48;
+  color: var(--ink-mid);
+  margin: 0 0 8px 0;
+}
+
+.tt-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  padding-top: 7px;
+  border-top: 1px solid #EAE4DA;
+  font-size: 10.3px;
+  color: var(--ink-mid);
+}
+
+.tt-stats strong {
+  color: var(--ink-dark);
+  font-weight: 600;
+}
+
+.tt-rivals {
+  margin: 6px 0 0 0;
+  padding-top: 7px;
+  border-top: 1px solid #EAE4DA;
+  font-size: 10.4px;
+  line-height: 1.45;
+  color: var(--ink-mid);
+}
+
+.tt-rivals strong {
+  color: var(--ink-dark);
+  font-weight: 600;
+}
+
+.load-status {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 480px;
+  padding: 16px 20px;
+  background: #FFFFFF;
+  border: 1px solid var(--col-toss);
+  border-radius: 6px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-dark);
+  text-align: center;
+}
+
+/* Mobile-only narrative cards (hidden on desktop to preserve pure editorial canvas) */
+.mobile-callouts {
+  display: none;
+}
+
+/* ==========================================================================
+   Matt Meier Branded Asymmetric Footer
+   Exact Desktop Geometry: x=0, y=672, w=1201, h=45, border-radius: 0 50px 0 50px
+   ========================================================================== */
+.branded-footer {
+  position: absolute;
+  left: 0;
+  top: 672px;
+  width: 1201px;
+  height: 45px;
+  padding: 0 38px 0 46px;
+  background-color: var(--footer-bg);
+  border-radius: 0 50px 0 50px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--footer-ink);
+}
+
+.footer-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--footer-ink);
+  opacity: 0.94;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 2px;
+}
+
+.footer-text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--footer-ink);
+  opacity: 0.95;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Responsive Mobile Phone Layout (Tableau Phone Device Layout Parity)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .infographic-canvas {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding-bottom: 16px;
+  }
+
+  .editorial-header {
+    padding: 18px 16px 0 16px;
+  }
+
+  .headline {
+    font-size: 24px;
+    line-height: 1.12;
+  }
+
+  .lead-copy {
+    font-size: 12.2px;
+    max-width: 100%;
+  }
+
+  .legend-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .legend-block {
+    width: 100%;
+  }
+
+  .legend-pills {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .interaction-cue {
+    white-space: normal;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .chart-stage {
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+  }
+
+  .svg-scroll-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  #staircase-svg {
+    width: 960px;
+    height: 390px;
+  }
+
+  .mobile-callouts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px 16px 18px 16px;
+  }
+
+  .mobile-note {
+    padding: 10px 12px;
+    background-color: #F3EFE8;
+    border-radius: 6px;
+  }
+
+  .mobile-note h2 {
+    margin: 0 0 4px 0;
+    font-size: 11.2px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+
+  .mobile-note h2.note-toss {
+    color: var(--col-toss);
+  }
+
+  .mobile-note h2.note-clear {
+    color: var(--col-clear);
+  }
+
+  .mobile-note p {
+    margin: 0;
+    font-size: 11.4px;
+    line-height: 1.45;
+    color: var(--ink-mid);
+  }
+
+  .branded-footer {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    min-height: 45px;
+    padding: 10px 18px;
+    border-radius: 0 36px 0 36px;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .footer-text {
+    white-space: normal;
+    font-size: 10px;
+    letter-spacing: 0.45px;
+  }
+
+  .editorial-tooltip {
+    width: 260px;
+  }
+}

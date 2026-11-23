@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certainty Climbs in Clean Steps | Pairwise Probability Infographic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <article class="infographic-canvas" id="canvas-frame" aria-labelledby="main-headline">
+      <header class="editorial-header">
+        <h1 id="main-headline" class="headline">
+          CERTAINTY CLIMBS IN CLEAN STEPS. DOUBT FLATTENS INTO NOISE.
+        </h1>
+        <p class="lead-copy">
+          Across 51,740 pairwise comparisons of 19 probability phrases, elevation shows each term's perceived
+          probability (0 to 100 Bradley-Terry scale) while step color encodes adjacent crowd agreement.
+        </p>
+
+        <div class="legend-row" role="region" aria-label="Adjacent pair agreement legend">
+          <div class="legend-block">
+            <div class="legend-title-line">
+              <span class="legend-heading">ADJACENT PAIR AGREEMENT</span>
+              <span class="legend-sub">(share selecting the higher-ranked phrase; 50% = pure coin toss)</span>
+            </div>
+            <div class="legend-pills" id="legend-controls">
+              <button type="button" class="legend-pill" data-tier="toss" aria-pressed="false">
+                <span class="swatch swatch-toss" aria-hidden="true"></span>
+                <span class="pill-copy">
+                  <strong>50% to 59%</strong>
+                  <small>Coin toss (flat plateau)</small>
+                </span>
+              </button>
+              <button type="button" class="legend-pill" data-tier="moderate" aria-pressed="false">
+                <span class="swatch swatch-moderate" aria-hidden="true"></span>
+                <span class="pill-copy">
+                  <strong>60% to 79%</strong>
+                  <small>Moderate consensus</small>
+                </span>
+              </button>
+              <button type="button" class="legend-pill" data-tier="clear" aria-pressed="false">
+                <span class="swatch swatch-clear" aria-hidden="true"></span>
+                <span class="pill-copy">
+                  <strong>80% to 100%</strong>
+                  <small>Clear consensus (steep cliff)</small>
+                </span>
+              </button>
+            </div>
+          </div>
+          <p class="interaction-cue" id="interaction-cue">
+            Hover any step or phrase for matchup details. Click a legend tier to isolate.
+          </p>
+        </div>
+      </header>
+
+      <main class="chart-stage" id="chart-stage">
+        <div class="svg-scroll-wrap">
+          <svg
+            id="staircase-svg"
+            viewBox="0 0 1201 488"
+            width="1201"
+            height="488"
+            role="img"
+            aria-label="Asymmetric staircase chart ranking 19 probability phrases from Almost No Chance at 0 to Will Happen at 100 on the Bradley-Terry perceived probability scale."
+          ></svg>
+        </div>
+        <div id="load-status" class="load-status" role="alert" hidden></div>
+        <div id="tooltip" class="editorial-tooltip" role="tooltip" aria-hidden="true"></div>
+      </main>
+
+      <section class="mobile-callouts" aria-label="Key editorial takeaways">
+        <div class="mobile-note">
+          <h2 class="note-toss">THE DOUBT PLATEAU</h2>
+          <p>Six low-probability phrases pack inside just 12 index points. Remote Chance vs. Improbable splits 51% to 49%.</p>
+        </div>
+        <div class="mobile-note">
+          <h2 class="note-clear">THE 92% CLARITY CLIFF</h2>
+          <p>Crossing from Unlikely to Could Happen leaps 15.3 index points, the largest consensus jump in the dataset (n = 424).</p>
+        </div>
+        <div class="mobile-note">
+          <h2 class="note-toss">THE COIN-TOSS TRAP</h2>
+          <p>Likely edges out Probable by just 53% to 47%. When asked the same pair twice in reverse order, 20% of respondents contradicted themselves.</p>
+        </div>
+        <div class="mobile-note">
+          <h2 class="note-clear">PRECISION AT THE TOP</h2>
+          <p>The final three steps climb cleanly by 10+ points each with 87% to 95% agreement and zero close rivals.</p>
+        </div>
+      </section>
+
+      <footer class="branded-footer" aria-label="Author attribution and data source">
+        <div class="footer-icons">
+          <a
+            class="footer-icon-link"
+            href="https://www.linkedin.com/in/meier2k8/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Matt Meier LinkedIn Profile"
+            title="Matt Meier on LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.34 18.34H5.67V9.75h2.67v8.59zM7 8.58a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zm11.34 9.76h-2.66v-4.18c0-1-.02-2.28-1.39-2.28-1.39 0-1.6 1.09-1.6 2.21v4.25h-2.66V9.75h2.56v1.17h.04c.36-.67 1.23-1.39 2.53-1.39 2.7 0 3.2 1.78 3.2 4.09v4.72z"
+              />
+            </svg>
+          </a>
+          <a
+            class="footer-icon-link"
+            href="https://public.tableau.com/app/profile/matt5450/vizzes"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Matt Meier Tableau Public Profile"
+            title="Matt Meier on Tableau Public"
+          >
+            <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true">
+              <g fill="currentColor">
+                <rect x="11.1" y="7.2" width="1.8" height="9.6" />
+                <rect x="7.2" y="11.1" width="9.6" height="1.8" />
+                <rect x="11.35" y="1.4" width="1.3" height="4.8" />
+                <rect x="9.6" y="3.15" width="4.8" height="1.3" />
+                <rect x="11.35" y="17.8" width="1.3" height="4.8" />
+                <rect x="9.6" y="19.55" width="4.8" height="1.3" />
+                <rect x="1.4" y="11.35" width="4.8" height="1.3" />
+                <rect x="3.15" y="9.6" width="1.3" height="4.8" />
+                <rect x="17.8" y="11.35" width="4.8" height="1.3" />
+                <rect x="19.55" y="9.6" width="1.3" height="4.8" />
+                <rect x="5.45" y="4.2" width="1.1" height="3.6" />
+                <rect x="4.2" y="5.45" width="3.6" height="1.1" />
+                <rect x="17.45" y="4.2" width="1.1" height="3.6" />
+                <rect x="16.2" y="5.45" width="3.6" height="1.1" />
+                <rect x="5.45" y="16.2" width="1.1" height="3.6" />
+                <rect x="4.2" y="17.45" width="3.6" height="1.1" />
+                <rect x="17.45" y="16.2" width="1.1" height="3.6" />
+                <rect x="16.2" y="17.45" width="3.6" height="1.1" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-text">
+          CREATED BY MATT MEIER&nbsp;&nbsp;|&nbsp;&nbsp;#MAKEOVERMONDAY 2026&nbsp;&nbsp;|&nbsp;&nbsp;SOURCE: ADAM KUCHARSKI
+        </p>
+      </footer>
+    </article>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>

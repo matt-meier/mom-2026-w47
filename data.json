@@ -1,0 +1,891 @@
+[
+  {
+    "rank":1,
+    "term":"Almost No Chance",
+    "short_label":[
+      "Almost",
+      "No Chance"
+    ],
+    "bt_index":0.0,
+    "win_rate":4.0,
+    "total_matchups":5585,
+    "avg_agreement":96.3,
+    "close_rivals_lt65":0,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Improbable",
+        "term_win_pct":17.0,
+        "agree_pct":83.0,
+        "n":265
+      },
+      {
+        "opponent":"Highly Unlikely",
+        "term_win_pct":12.1,
+        "agree_pct":87.9,
+        "n":571
+      },
+      {
+        "opponent":"Remote Chance",
+        "term_win_pct":8.3,
+        "agree_pct":91.7,
+        "n":180
+      }
+    ],
+    "next_term":"Highly Unlikely",
+    "next_bt_index":11.57,
+    "index_gap":11.57,
+    "next_direct_win_pct":87.9,
+    "next_agree_pct":87.9,
+    "next_n":571.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":97.0,
+    "next_repeat_flips":8.0,
+    "next_repeat_flip_pct":8.2,
+    "next_note":"Clear consensus: 87.9% of respondents (n = 571) ranked Highly Unlikely higher than Almost No Chance, creating a decisive 11.6-point leap on the perceived probability scale. When shown this exact pair twice in reverse order, 8 of 97 people (8.2%) contradicted themselves."
+  },
+  {
+    "rank":2,
+    "term":"Highly Unlikely",
+    "short_label":[
+      "Highly",
+      "Unlikely"
+    ],
+    "bt_index":11.57,
+    "win_rate":16.1,
+    "total_matchups":5495,
+    "avg_agreement":92.2,
+    "close_rivals_lt65":1,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Remote Chance",
+        "term_win_pct":36.9,
+        "agree_pct":63.1,
+        "n":312
+      },
+      {
+        "opponent":"Improbable",
+        "term_win_pct":32.5,
+        "agree_pct":67.5,
+        "n":351
+      },
+      {
+        "opponent":"Little Chance",
+        "term_win_pct":13.0,
+        "agree_pct":87.0,
+        "n":254
+      }
+    ],
+    "next_term":"Remote Chance",
+    "next_bt_index":14.92,
+    "index_gap":3.35,
+    "next_direct_win_pct":63.1,
+    "next_agree_pct":63.1,
+    "next_n":312.0,
+    "next_tier":"moderate",
+    "next_inverted":false,
+    "next_repeat_n":14.0,
+    "next_repeat_flips":3.0,
+    "next_repeat_flip_pct":21.4,
+    "next_note":"Moderate consensus: 63.1% of respondents (n = 312) placed Remote Chance above Highly Unlikely, separating the pair by 3.4 index points. In repeat testing (n = 14), 3 respondents (21.4%) reversed their own choice."
+  },
+  {
+    "rank":3,
+    "term":"Remote Chance",
+    "short_label":[
+      "Remote",
+      "Chance"
+    ],
+    "bt_index":14.92,
+    "win_rate":14.5,
+    "total_matchups":5393,
+    "avg_agreement":89.9,
+    "close_rivals_lt65":2,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Improbable",
+        "term_win_pct":49.2,
+        "agree_pct":50.8,
+        "n":321
+      },
+      {
+        "opponent":"Highly Unlikely",
+        "term_win_pct":63.1,
+        "agree_pct":63.1,
+        "n":312
+      },
+      {
+        "opponent":"Unlikely",
+        "term_win_pct":29.7,
+        "agree_pct":70.3,
+        "n":390
+      }
+    ],
+    "next_term":"Improbable",
+    "next_bt_index":15.34,
+    "index_gap":0.42,
+    "next_direct_win_pct":50.8,
+    "next_agree_pct":50.8,
+    "next_n":321.0,
+    "next_tier":"toss",
+    "next_inverted":false,
+    "next_repeat_n":26.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Coin-toss split: Improbable edged out Remote Chance by 50.8% to 49.2% (n = 321), leaving just 0.4 index points between them. None of the 26 respondents shown this pair twice contradicted themselves."
+  },
+  {
+    "rank":4,
+    "term":"Improbable",
+    "short_label":[
+      "Improbable"
+    ],
+    "bt_index":15.34,
+    "win_rate":18.7,
+    "total_matchups":5495,
+    "avg_agreement":88.5,
+    "close_rivals_lt65":2,
+    "stagger_label":true,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Remote Chance",
+        "term_win_pct":50.8,
+        "agree_pct":50.8,
+        "n":321
+      },
+      {
+        "opponent":"Little Chance",
+        "term_win_pct":38.9,
+        "agree_pct":61.1,
+        "n":319
+      },
+      {
+        "opponent":"Highly Unlikely",
+        "term_win_pct":67.5,
+        "agree_pct":67.5,
+        "n":351
+      }
+    ],
+    "next_term":"Little Chance",
+    "next_bt_index":20.76,
+    "index_gap":5.41,
+    "next_direct_win_pct":61.1,
+    "next_agree_pct":61.1,
+    "next_n":319.0,
+    "next_tier":"moderate",
+    "next_inverted":false,
+    "next_repeat_n":15.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Moderate consensus: 61.1% of respondents (n = 319) placed Little Chance above Improbable, separating the pair by 5.4 index points. None of the 15 respondents shown this pair twice contradicted themselves."
+  },
+  {
+    "rank":5,
+    "term":"Little Chance",
+    "short_label":[
+      "Little",
+      "Chance"
+    ],
+    "bt_index":20.76,
+    "win_rate":26.7,
+    "total_matchups":5372,
+    "avg_agreement":90.5,
+    "close_rivals_lt65":3,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Chances are Slight",
+        "term_win_pct":54.5,
+        "agree_pct":54.5,
+        "n":286
+      },
+      {
+        "opponent":"Improbable",
+        "term_win_pct":61.1,
+        "agree_pct":61.1,
+        "n":319
+      },
+      {
+        "opponent":"Unlikely",
+        "term_win_pct":35.7,
+        "agree_pct":64.3,
+        "n":286
+      }
+    ],
+    "next_term":"Chances are Slight",
+    "next_bt_index":21.59,
+    "index_gap":0.83,
+    "next_direct_win_pct":45.5,
+    "next_agree_pct":54.5,
+    "next_n":286.0,
+    "next_tier":"toss",
+    "next_inverted":true,
+    "next_repeat_n":13.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Near-exact tie: Little Chance narrowly led Chances are Slight in direct matchups (54.5% to 45.5%, n = 286), while overall results across all 18 opponents placed Chances are Slight 0.8 index points higher."
+  },
+  {
+    "rank":6,
+    "term":"Chances are Slight",
+    "short_label":[
+      "Chances",
+      "are Slight"
+    ],
+    "bt_index":21.59,
+    "win_rate":22.6,
+    "total_matchups":5566,
+    "avg_agreement":90.2,
+    "close_rivals_lt65":2,
+    "stagger_label":true,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Unlikely",
+        "term_win_pct":45.6,
+        "agree_pct":54.4,
+        "n":252
+      },
+      {
+        "opponent":"Little Chance",
+        "term_win_pct":45.5,
+        "agree_pct":54.5,
+        "n":286
+      },
+      {
+        "opponent":"Improbable",
+        "term_win_pct":70.1,
+        "agree_pct":70.1,
+        "n":471
+      }
+    ],
+    "next_term":"Unlikely",
+    "next_bt_index":23.54,
+    "index_gap":1.95,
+    "next_direct_win_pct":54.4,
+    "next_agree_pct":54.4,
+    "next_n":252.0,
+    "next_tier":"toss",
+    "next_inverted":false,
+    "next_repeat_n":19.0,
+    "next_repeat_flips":2.0,
+    "next_repeat_flip_pct":10.5,
+    "next_note":"Coin-toss split: Unlikely edged out Chances are Slight by 54.4% to 45.6% (n = 252), leaving just 1.9 index points between them. When shown this exact pair twice in reverse order, 2 of 19 people (10.5%) contradicted themselves."
+  },
+  {
+    "rank":7,
+    "term":"Unlikely",
+    "short_label":[
+      "Unlikely"
+    ],
+    "bt_index":23.54,
+    "win_rate":27.0,
+    "total_matchups":5497,
+    "avg_agreement":90.3,
+    "close_rivals_lt65":2,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Chances are Slight",
+        "term_win_pct":54.4,
+        "agree_pct":54.4,
+        "n":252
+      },
+      {
+        "opponent":"Little Chance",
+        "term_win_pct":64.3,
+        "agree_pct":64.3,
+        "n":286
+      },
+      {
+        "opponent":"Remote Chance",
+        "term_win_pct":70.3,
+        "agree_pct":70.3,
+        "n":390
+      }
+    ],
+    "next_term":"Could Happen",
+    "next_bt_index":38.85,
+    "index_gap":15.31,
+    "next_direct_win_pct":92.0,
+    "next_agree_pct":92.0,
+    "next_n":424.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":88.0,
+    "next_repeat_flips":6.0,
+    "next_repeat_flip_pct":6.8,
+    "next_note":"Clear consensus: 92.0% of respondents (n = 424) ranked Could Happen higher than Unlikely, creating a decisive 15.3-point leap on the perceived probability scale. When shown this exact pair twice in reverse order, 6 of 88 people (6.8%) contradicted themselves."
+  },
+  {
+    "rank":8,
+    "term":"Could Happen",
+    "short_label":[
+      "Could",
+      "Happen"
+    ],
+    "bt_index":38.85,
+    "win_rate":45.9,
+    "total_matchups":5521,
+    "avg_agreement":90.2,
+    "close_rivals_lt65":2,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Might Happen",
+        "term_win_pct":50.8,
+        "agree_pct":50.8,
+        "n":240
+      },
+      {
+        "opponent":"May Happen",
+        "term_win_pct":38.7,
+        "agree_pct":61.3,
+        "n":346
+      },
+      {
+        "opponent":"About Even",
+        "term_win_pct":29.7,
+        "agree_pct":70.3,
+        "n":263
+      }
+    ],
+    "next_term":"Might Happen",
+    "next_bt_index":39.11,
+    "index_gap":0.26,
+    "next_direct_win_pct":49.2,
+    "next_agree_pct":50.8,
+    "next_n":240.0,
+    "next_tier":"toss",
+    "next_inverted":true,
+    "next_repeat_n":16.0,
+    "next_repeat_flips":5.0,
+    "next_repeat_flip_pct":31.2,
+    "next_note":"Near-exact tie: Could Happen narrowly led Might Happen in direct matchups (50.8% to 49.2%, n = 240), while overall results across all 18 opponents placed Might Happen 0.3 index points higher. When shown this exact pair twice in reverse order, 5 of 16 people (31.2%) contradicted themselves."
+  },
+  {
+    "rank":9,
+    "term":"Might Happen",
+    "short_label":[
+      "Might",
+      "Happen"
+    ],
+    "bt_index":39.11,
+    "win_rate":44.7,
+    "total_matchups":5413,
+    "avg_agreement":91.2,
+    "close_rivals_lt65":2,
+    "stagger_label":true,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Could Happen",
+        "term_win_pct":49.2,
+        "agree_pct":50.8,
+        "n":240
+      },
+      {
+        "opponent":"May Happen",
+        "term_win_pct":39.0,
+        "agree_pct":61.0,
+        "n":249
+      },
+      {
+        "opponent":"About Even",
+        "term_win_pct":27.7,
+        "agree_pct":72.3,
+        "n":314
+      }
+    ],
+    "next_term":"May Happen",
+    "next_bt_index":41.37,
+    "index_gap":2.26,
+    "next_direct_win_pct":61.0,
+    "next_agree_pct":61.0,
+    "next_n":249.0,
+    "next_tier":"moderate",
+    "next_inverted":false,
+    "next_repeat_n":12.0,
+    "next_repeat_flips":2.0,
+    "next_repeat_flip_pct":16.7,
+    "next_note":"Moderate consensus: 61.0% of respondents (n = 249) placed May Happen above Might Happen, separating the pair by 2.3 index points. In repeat testing (n = 12), 2 respondents (16.7%) reversed their own choice."
+  },
+  {
+    "rank":10,
+    "term":"May Happen",
+    "short_label":[
+      "May",
+      "Happen"
+    ],
+    "bt_index":41.37,
+    "win_rate":50.3,
+    "total_matchups":5251,
+    "avg_agreement":91.0,
+    "close_rivals_lt65":2,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Might Happen",
+        "term_win_pct":61.0,
+        "agree_pct":61.0,
+        "n":249
+      },
+      {
+        "opponent":"Could Happen",
+        "term_win_pct":61.3,
+        "agree_pct":61.3,
+        "n":346
+      },
+      {
+        "opponent":"About Even",
+        "term_win_pct":31.3,
+        "agree_pct":68.7,
+        "n":211
+      }
+    ],
+    "next_term":"About Even",
+    "next_bt_index":44.85,
+    "index_gap":3.47,
+    "next_direct_win_pct":68.7,
+    "next_agree_pct":68.7,
+    "next_n":211.0,
+    "next_tier":"moderate",
+    "next_inverted":false,
+    "next_repeat_n":9.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Moderate consensus: 68.7% of respondents (n = 211) placed About Even above May Happen, separating the pair by 3.5 index points."
+  },
+  {
+    "rank":11,
+    "term":"About Even",
+    "short_label":[
+      "About",
+      "Even"
+    ],
+    "bt_index":44.85,
+    "win_rate":50.6,
+    "total_matchups":5318,
+    "avg_agreement":91.4,
+    "close_rivals_lt65":1,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Realistic Possibility",
+        "term_win_pct":42.2,
+        "agree_pct":57.8,
+        "n":185
+      },
+      {
+        "opponent":"May Happen",
+        "term_win_pct":68.7,
+        "agree_pct":68.7,
+        "n":211
+      },
+      {
+        "opponent":"Could Happen",
+        "term_win_pct":70.3,
+        "agree_pct":70.3,
+        "n":263
+      }
+    ],
+    "next_term":"Realistic Possibility",
+    "next_bt_index":52.34,
+    "index_gap":7.49,
+    "next_direct_win_pct":57.8,
+    "next_agree_pct":57.8,
+    "next_n":185.0,
+    "next_tier":"toss",
+    "next_inverted":false,
+    "next_repeat_n":19.0,
+    "next_repeat_flips":1.0,
+    "next_repeat_flip_pct":5.3,
+    "next_note":"In direct matchups (n = 185), Realistic Possibility beat About Even by 57.8% to 42.2%. Stronger win rates against the other 17 phrases pull them 7.5 index points apart overall. When shown this exact pair twice in reverse order, 1 of 19 people (5.3%) contradicted themselves."
+  },
+  {
+    "rank":12,
+    "term":"Realistic Possibility",
+    "short_label":[
+      "Realistic",
+      "Possibility"
+    ],
+    "bt_index":52.34,
+    "win_rate":61.7,
+    "total_matchups":5645,
+    "avg_agreement":90.1,
+    "close_rivals_lt65":2,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"About Even",
+        "term_win_pct":57.8,
+        "agree_pct":57.8,
+        "n":185
+      },
+      {
+        "opponent":"Better than Even",
+        "term_win_pct":41.2,
+        "agree_pct":58.8,
+        "n":371
+      },
+      {
+        "opponent":"May Happen",
+        "term_win_pct":85.7,
+        "agree_pct":85.7,
+        "n":307
+      }
+    ],
+    "next_term":"Better than Even",
+    "next_bt_index":55.22,
+    "index_gap":2.88,
+    "next_direct_win_pct":58.8,
+    "next_agree_pct":58.8,
+    "next_n":371.0,
+    "next_tier":"toss",
+    "next_inverted":false,
+    "next_repeat_n":26.0,
+    "next_repeat_flips":2.0,
+    "next_repeat_flip_pct":7.7,
+    "next_note":"Coin-toss split: Better than Even edged out Realistic Possibility by 58.8% to 41.2% (n = 371), leaving just 2.9 index points between them. When shown this exact pair twice in reverse order, 2 of 26 people (7.7%) contradicted themselves."
+  },
+  {
+    "rank":13,
+    "term":"Better than Even",
+    "short_label":[
+      "Better",
+      "than Even"
+    ],
+    "bt_index":55.22,
+    "win_rate":66.2,
+    "total_matchups":5485,
+    "avg_agreement":93.9,
+    "close_rivals_lt65":1,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Realistic Possibility",
+        "term_win_pct":58.8,
+        "agree_pct":58.8,
+        "n":371
+      },
+      {
+        "opponent":"Probable",
+        "term_win_pct":14.8,
+        "agree_pct":85.2,
+        "n":256
+      },
+      {
+        "opponent":"Could Happen",
+        "term_win_pct":90.8,
+        "agree_pct":90.8,
+        "n":349
+      }
+    ],
+    "next_term":"Probable",
+    "next_bt_index":64.93,
+    "index_gap":9.71,
+    "next_direct_win_pct":85.2,
+    "next_agree_pct":85.2,
+    "next_n":256.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":6.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Clear consensus: 85.2% of respondents (n = 256) ranked Probable higher than Better than Even, creating a decisive 9.7-point leap on the perceived probability scale."
+  },
+  {
+    "rank":14,
+    "term":"Probable",
+    "short_label":[
+      "Probable"
+    ],
+    "bt_index":64.93,
+    "win_rate":77.7,
+    "total_matchups":5311,
+    "avg_agreement":92.1,
+    "close_rivals_lt65":1,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Likely",
+        "term_win_pct":46.9,
+        "agree_pct":53.1,
+        "n":473
+      },
+      {
+        "opponent":"Very Good Chance",
+        "term_win_pct":28.9,
+        "agree_pct":71.1,
+        "n":256
+      },
+      {
+        "opponent":"Better than Even",
+        "term_win_pct":85.2,
+        "agree_pct":85.2,
+        "n":256
+      }
+    ],
+    "next_term":"Likely",
+    "next_bt_index":65.65,
+    "index_gap":0.71,
+    "next_direct_win_pct":53.1,
+    "next_agree_pct":53.1,
+    "next_n":473.0,
+    "next_tier":"toss",
+    "next_inverted":false,
+    "next_repeat_n":116.0,
+    "next_repeat_flips":23.0,
+    "next_repeat_flip_pct":19.8,
+    "next_note":"Coin-toss split: Likely edged out Probable by 53.1% to 46.9% (n = 473), leaving just 0.7 index points between them. When shown this exact pair twice in reverse order, 23 of 116 people (19.8%) contradicted themselves."
+  },
+  {
+    "rank":15,
+    "term":"Likely",
+    "short_label":[
+      "Likely"
+    ],
+    "bt_index":65.65,
+    "win_rate":68.5,
+    "total_matchups":5707,
+    "avg_agreement":93.5,
+    "close_rivals_lt65":2,
+    "stagger_label":true,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Probable",
+        "term_win_pct":53.1,
+        "agree_pct":53.1,
+        "n":473
+      },
+      {
+        "opponent":"Very Good Chance",
+        "term_win_pct":36.0,
+        "agree_pct":64.0,
+        "n":403
+      },
+      {
+        "opponent":"Realistic Possibility",
+        "term_win_pct":87.7,
+        "agree_pct":87.7,
+        "n":244
+      }
+    ],
+    "next_term":"Very Good Chance",
+    "next_bt_index":69.62,
+    "index_gap":3.98,
+    "next_direct_win_pct":64.0,
+    "next_agree_pct":64.0,
+    "next_n":403.0,
+    "next_tier":"moderate",
+    "next_inverted":false,
+    "next_repeat_n":116.0,
+    "next_repeat_flips":18.0,
+    "next_repeat_flip_pct":15.5,
+    "next_note":"Moderate consensus: 64.0% of respondents (n = 403) placed Very Good Chance above Likely, separating the pair by 4.0 index points. When shown this exact pair twice in reverse order, 18 of 116 people (15.5%) contradicted themselves."
+  },
+  {
+    "rank":16,
+    "term":"Very Good Chance",
+    "short_label":[
+      "Very Good",
+      "Chance"
+    ],
+    "bt_index":69.62,
+    "win_rate":81.4,
+    "total_matchups":5479,
+    "avg_agreement":94.1,
+    "close_rivals_lt65":1,
+    "stagger_label":false,
+    "emphasize_label":false,
+    "closest_rivals":[
+      {
+        "opponent":"Likely",
+        "term_win_pct":64.0,
+        "agree_pct":64.0,
+        "n":403
+      },
+      {
+        "opponent":"Probable",
+        "term_win_pct":71.1,
+        "agree_pct":71.1,
+        "n":256
+      },
+      {
+        "opponent":"Realistic Possibility",
+        "term_win_pct":89.3,
+        "agree_pct":89.3,
+        "n":289
+      }
+    ],
+    "next_term":"Highly Likely",
+    "next_bt_index":79.27,
+    "index_gap":9.65,
+    "next_direct_win_pct":91.9,
+    "next_agree_pct":91.9,
+    "next_n":284.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":9.0,
+    "next_repeat_flips":1.0,
+    "next_repeat_flip_pct":11.1,
+    "next_note":"Clear consensus: 91.9% of respondents (n = 284) ranked Highly Likely higher than Very Good Chance, creating a decisive 9.7-point leap on the perceived probability scale. In repeat testing (n = 9), 1 respondents (11.1%) reversed their own choice."
+  },
+  {
+    "rank":17,
+    "term":"Highly Likely",
+    "short_label":[
+      "Highly",
+      "Likely"
+    ],
+    "bt_index":79.27,
+    "win_rate":88.5,
+    "total_matchups":5391,
+    "avg_agreement":97.0,
+    "close_rivals_lt65":0,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Probable",
+        "term_win_pct":87.6,
+        "agree_pct":87.6,
+        "n":170
+      },
+      {
+        "opponent":"Very Good Chance",
+        "term_win_pct":91.9,
+        "agree_pct":91.9,
+        "n":284
+      },
+      {
+        "opponent":"Will Happen",
+        "term_win_pct":7.2,
+        "agree_pct":92.8,
+        "n":290
+      }
+    ],
+    "next_term":"Almost Certain",
+    "next_bt_index":89.86,
+    "index_gap":10.59,
+    "next_direct_win_pct":95.1,
+    "next_agree_pct":95.1,
+    "next_n":246.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":19.0,
+    "next_repeat_flips":0.0,
+    "next_repeat_flip_pct":0.0,
+    "next_note":"Clear consensus: 95.1% of respondents (n = 246) ranked Almost Certain higher than Highly Likely, creating a decisive 10.6-point leap on the perceived probability scale. None of the 19 respondents shown this pair twice contradicted themselves."
+  },
+  {
+    "rank":18,
+    "term":"Almost Certain",
+    "short_label":[
+      "Almost",
+      "Certain"
+    ],
+    "bt_index":89.86,
+    "win_rate":91.2,
+    "total_matchups":5154,
+    "avg_agreement":98.0,
+    "close_rivals_lt65":0,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Will Happen",
+        "term_win_pct":12.8,
+        "agree_pct":87.2,
+        "n":452
+      },
+      {
+        "opponent":"Highly Likely",
+        "term_win_pct":95.1,
+        "agree_pct":95.1,
+        "n":246
+      },
+      {
+        "opponent":"Probable",
+        "term_win_pct":96.9,
+        "agree_pct":96.9,
+        "n":225
+      }
+    ],
+    "next_term":"Will Happen",
+    "next_bt_index":100.0,
+    "index_gap":10.14,
+    "next_direct_win_pct":87.2,
+    "next_agree_pct":87.2,
+    "next_n":452.0,
+    "next_tier":"clear",
+    "next_inverted":false,
+    "next_repeat_n":60.0,
+    "next_repeat_flips":4.0,
+    "next_repeat_flip_pct":6.7,
+    "next_note":"Clear consensus: 87.2% of respondents (n = 452) ranked Will Happen higher than Almost Certain, creating a decisive 10.1-point leap on the perceived probability scale. When shown this exact pair twice in reverse order, 4 of 60 people (6.7%) contradicted themselves."
+  },
+  {
+    "rank":19,
+    "term":"Will Happen",
+    "short_label":[
+      "Will",
+      "Happen"
+    ],
+    "bt_index":100.0,
+    "win_rate":97.6,
+    "total_matchups":5402,
+    "avg_agreement":98.0,
+    "close_rivals_lt65":0,
+    "stagger_label":false,
+    "emphasize_label":true,
+    "closest_rivals":[
+      {
+        "opponent":"Almost Certain",
+        "term_win_pct":87.2,
+        "agree_pct":87.2,
+        "n":452
+      },
+      {
+        "opponent":"Highly Likely",
+        "term_win_pct":92.8,
+        "agree_pct":92.8,
+        "n":290
+      },
+      {
+        "opponent":"Likely",
+        "term_win_pct":97.2,
+        "agree_pct":97.2,
+        "n":573
+      }
+    ],
+    "next_term":null,
+    "next_bt_index":null,
+    "index_gap":null,
+    "next_direct_win_pct":null,
+    "next_agree_pct":null,
+    "next_n":null,
+    "next_tier":null,
+    "next_inverted":null,
+    "next_repeat_n":null,
+    "next_repeat_flips":null,
+    "next_repeat_flip_pct":null,
+    "next_note":null
+  }
+]
